@@ -1,4 +1,4 @@
-Application can using MySQL or H2 database. MySQL connection settings can be found in file src/main/resources/application.yml.
+Application can use MySQL or H2 database. MySQL connection settings can be found in file src/main/resources/application.yml.
 If commented out it will default to in memory H2 database.
 
 Project is started by running command "mvn spring-boot:run" from the root. It can be accessed on port 8080.
