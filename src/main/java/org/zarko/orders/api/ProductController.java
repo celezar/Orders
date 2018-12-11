@@ -49,7 +49,7 @@ public class ProductController {
 
     @ApiOperation(value = "Updates product", response = Product.class)
     @PutMapping(value = "{id}", produces = JSON)
-    public Product getAllProducts(@PathVariable Long id, @RequestBody ProductDto productDto) {
+    public Product updateProduct(@PathVariable Long id, @RequestBody ProductDto productDto) {
         Product product = createProductFromDto(productDto);
         product.setId(id);
         return productService.updateProduct(product);
