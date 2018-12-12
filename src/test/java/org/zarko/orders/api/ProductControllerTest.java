@@ -1,5 +1,9 @@
 package org.zarko.orders.api;
 
+import static org.junit.Assert.assertTrue;
+import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.when;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -10,10 +14,6 @@ import org.springframework.http.ResponseEntity;
 import org.zarko.orders.dto.ProductDto;
 import org.zarko.orders.entity.Product;
 import org.zarko.orders.service.ProductService;
-
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
-import static org.junit.Assert.assertTrue;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ProductControllerTest {

@@ -7,3 +7,6 @@ spring:
   jpa:
     hibernate:
       ddl-auto: none
+  flyway:
+    locations: classpath:db/h2-migration
+
